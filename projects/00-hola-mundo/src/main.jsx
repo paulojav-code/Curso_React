@@ -14,15 +14,16 @@ const Button =  ({nameButton}) => {
 // createRoot(document.getElementById('root')).render(
 //   <React.Fragment>
 //     <button>Boton 1</button>
-//     <button>Boton 2</button>
+//     <button>Boton 2</button>  //Esto es imperativamente 
 //     <button>Boton 3</button>
 //   </React.Fragment>
 // )
 
 createRoot(document.getElementById('root')).render(
+  //Se debe de escribir Button en pascal case por que si no no lo reconoce como un componente
   <React.Fragment>
     <Button nameButton={"Boton 1"}/>
-    <Button nameButton={"Boton 2"}/>
+    <Button nameButton={"Boton 2"}/>  {/*Esto esusando un componente*/}
     <Button nameButton={"Boton 3"}/>
   </React.Fragment>
 )
